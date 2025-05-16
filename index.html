@@ -72,6 +72,22 @@
       z-index: 4;
       pointer-events: none;
     }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 36px;
+      color: rgba(255, 255, 255, 0.5);
+      z-index: 5;
+      pointer-events: none;
+      user-select: none;
+    }
+    .arrow.left {
+      left: 10px;
+    }
+    .arrow.right {
+      right: 10px;
+    }
     .caption {
       max-width: 90%;
       font-size: 16px;
@@ -93,6 +109,8 @@
     <img id="bottom" src="Foce del Sarca_prima.jpg" alt="antico">
     <img id="top" src="Foce del Sarca_dopo.jpg" alt="recente">
     <div class="slider" id="slider"><div class="handle"></div></div>
+    <div class="arrow left">←</div>
+    <div class="arrow right">→</div>
   </div>
 
   <div class="caption" id="caption">
